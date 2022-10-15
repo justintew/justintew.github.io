@@ -1,211 +1,257 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Tew</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .img-fluid{
-            z-index: 1;
-        }
-
-        #boxthing{
-            z-index: 2;
-        }
-    </style>
- 
-</head>
-<body>
-    
-    <!-- <div id="home" class="hero">
-        <nav>
-            <h2 class='logo'>Justin <span>Tew</span></h2>
-            <ul>
-                <li><a href='#home'>Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-            <a href="https://t.me/justintew" target="_blank" class="btn"><i class="fa-brands fa-telegram"></i></a>
-        </nav>
-
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Justin <span>Tew</span></h1>
-            <h3>I'm a SMU Y1 Student.</h3>
-            <div class="newsletter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter your Email">
-                    <input type="submit" name="submit" value="Lets Start">
-                </form>
-            </div>
-        </div>
-    </div> -->
-
+    <script>
+      function clickMe(){
+        console.log("Test")
+        document.getElementById('telegram_button').innerHTML = "Telegram me!";
+      }
+      function clickMe2(){
+        console.log("Test")
+        document.getElementById('telegram_button').innerHTML = "<i class='fa-brands fa-telegram fs-4'>";
+      }
+    </script>
+  </head>
+  <body>
     <!--Header Navbar Start-->
-    <div class="container-fluid bg-black" style="padding: 0px 40px 0px 40px">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-            <nav class="navbar bg-black">
-                <div class="container-fluid">
-                  <a class="navbar-brand text-white mx-auto" href="#">
-                    <p id="top_name" style="font-size: 40px;" class="d-inline-block align-text-center">Justin <span style="color:#229ED9">Tew</span></p>
-                  </a>
-                </div>
-              </nav>
-    
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5">
-            <li><a href="#" class="px-5 nav-link px-2 text-white link-primary">Home</a></li>
-            <li><a href="#about" class="px-5 nav-link px-2 text-white link-primary">About Me</a></li>
-            <li><a href="#skills" class="px-5 nav-link px-2 text-white link-primary">Skills</a></li>
-            <li><a href="#contact" class="px-5 nav-link px-2 text-white link-primary">Contact Me</a></li>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-black p-lg-4 p-sm-4"
+      aria-label="home_navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand px-3" href="#">
+          <img src="./img/kaiju.JPG" alt="Logo" width="100" height="100">
+        </a>
+        <!-- Base Navbar -->
+        <div class="collapse navbar-collapse" id="website_navbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-sm-0 fs-5">
+            <li class="nav-item px-lg-3 px-sm-1">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item px-lg-3 px-sm-1">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item px-lg-3 px-sm-1">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
           </ul>
-    
-          <div class="col-md-3 text-end">
-            <a href="https://t.me/justintew" target="_blank" class="btn py-2 px-4" style="background-color:#229ED9; color:white;"><i class="fa-brands fa-telegram"></i></a>
-          </div>
-        </header>
-    </div>
-    
+        </div>
+
+        <div class="col-md-1 text-end">
+          <a
+            href="https://t.me/justintew"
+            target="_blank"
+            onmouseover="clickMe()"
+            onmouseleave="clickMe2()"
+            id="telegram_button"
+            class="btn btn-primary py-2 px-4"
+            style="background-color: #229ed9;"
+            ><i class="fa-brands fa-telegram fs-4"></i
+              ></a>
+        </div>
+        <!-- Toggler when screen gets smaller -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#website_navbar"
+          aria-controls="website_navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
     <!-- Home Section -->
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-black">
-        <img src="/img/background.png" class="img-fluid" alt="...">
-        <div id="boxthing" class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal">Punny headline</h1>
-          <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <div id="home" class="container-fluid bg-black">
+      <div class="card text-bg-dark bg-black">
+        <img src="/img/background.png" class="card-img" alt="..." />
+        <div
+          class="card-img-overlay d-block justify-content-center align-items-center"
+        >
+          <div class="card-body justify-content-center text-center">
+            <p class="card-text fs-5">Hi, my name is</p>
+            <h1 class="card-title py-2" style="font-size: 85px;">Justin <span style="color:#229ed9">Tew</span></h1>
+            <p class="card-text fs-4 py-3">I'm a Y2 SMU Information Systems student.</p>
+            <a class="btn btn-primary fw-bold text-black" target = "_blank" id="connect_button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+              ><span> Check out my Resume </span></a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
-
-    <!--About Section-->
-    <section id="about" class="about">
-        <div class="main" data-aos="fade-right">
-            <img src="img/main-img.jpg">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5>Singapore Management University</h5>
-                <h6>Bachelor of Science - <span>Information Systems</span></h6>
-                <p>I am a Year 1 student studying in Singapore Management University, Information Systems. 
-                    I am coding this website for exposure and also I hope I can provide cleaner code and 
-                    pixel perfect design. I am passionate about Blockchain technology and I would like to 
-                    share this passion with everyone.
-                </p>
-                <a class="button" href="https://linktr.ee/Krakken" target="_blank">Connect with me!</a>
+    <!-- About Section -->
+    <div class="container-fluid bg-black">
+      <div class="card bg-black" style="max-width: 100%">
+        <div class="row g-0">
+          <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+            <img
+              src="img/kaiju.jpg"
+              class="img-thumbnail rounded-circle"
+              style="width:500px; height: 500px; border: 2px solid #229ed9; background: transparent"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-5">
+            <div class="card-body text-left text-white px-lg-5">
+              <h1 class="card-title" style="font-size: 75px">About Me</h1>
+              <h5 class="card-text" style="font-size: 22px">
+                Singapore Management University
+              </h5>
+              <h6 class="card-text" style="font-size: 22px">
+                Bachelor of Science -
+                <span style="color: #229ed9">Information Systems</span>
+              </h6>
+              <p class="card-text" style="font-size: 18px">
+                I am a Year 2 student studying in Singapore Management
+                University, Information Systems. I am coding this website for
+                exposure and also I hope I can provide cleaner code and pixel
+                perfect design. I am passionate about Blockchain technology and
+                I would like to share this passion with everyone.
+              </p>
+              <a
+                class="btn btn-primary text-wrap text-black fw-semibold"
+                id="connect_button"
+                href="https://linktr.ee/Krakken"
+                role="button"
+                target="_blank"
+                ><span>Connect with me! </span></a
+              >
             </div>
+          </div>
         </div>
-    </section>
-
-    <!--Skills Section Start-->
-    <div id="skills" class="skills">
-        <div class="title" data-aos="fade-right">
-            <h2>Skills</h2>
-        </div>
-
-        <div class="box">
-            <div class="card" data-aos="fade-left">
-                <i class="fa-brands fa-python"></i>
-                <h5>Web Development</h5>
-                <div class="para">
-                    <p>Adept in Python programming, I am the best in Python programming, I am the best.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="https://github.com/justintew" target="_blank">Read more</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card" data-aos="fade-left">
-                <i class="fa-brands fa-ethereum"></i>
-                <h5>Blockchain Research</h5>
-                <div class="para">
-                    <p>Adept in Python programming, I am the best in Python programming, I am the best.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="https://krakkenresearch.substack.com/" target="_blank">Read more</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card" data-aos="fade-left">
-                <i class="material-icons">attach_money</i>
-                <h5>Personal Finance</h5>
-                <div class="para">
-                    <p>Adept in Python programming, I am the best in Python programming, I am the best.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Read more</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-
-    <!--Contact Me-->
-    <div id="contact" class="contact-me" >
-        <p data-aos="zoom-in-up">Feel free to drop me an email!</p>
-        <a data-aos="zoom-in-up" class="button-two" href="mailto:justinntew@gmail.com" target="_blank">Click here</a>
+    <!-- Projects Section -->
+    <div id="projects" class="container-fluid bg-black" style="padding: 100px 0px 80px 0px">
+      <div class="col-12 d-flex justify-content-center">
+        <h1 class="text-white" style="font-size: 75px">Projects</h1>
+      </div>
     </div>
 
-    <!--Footer Section-->
-    <footer>
-        <p>Be <span>Fearless</span></p>
+    <div class="container-fluid bg-black" style="padding: 50px 100px">
+      <div class="row row-cols-md-1 row-cols-lg-3 gx-5 bg-black">
+        <div class="col px-5 py-4">
+          <div class="card h-100" style="background-color:#229ed9">
+            <i class="d-block fa-brands fa-python"></i>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bolder fs-3">Github</h5>
+              <p class="card-text fs-5">
+                This is my Github profile. I will be uploading my projects here, so do check it out! I've done up to 3 projects so far, and also I am currently working on a project with my friends. This website is also a personal project of mine :) 
+              </p>
+              <a role="button" class="btn btn-outline-dark" target= "_blank" href="https://github.com/justintew/justintew.github.io">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col px-5 py-4">
+          <div class="card h-100" style="background-color:#229ed9">
+            <i class="fa-brands fa-ethereum"></i>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bolder fs-3">Probably Nothing Research</h5>
+              <p class="card-text fs-5">
+                Co-founded a crypto research collective that focuses on providing valuable DeFi education, through summarised articles and infographics. We have since written for over 30 protocols, and discussed about the hottest topics within the Web3 space. We are currently writing on our Substack, and we are also working on a website to host our articles.
+              </p>
+              <a role="button" class="btn btn-outline-dark" target= "_blank" href="https://probablynothingresearch.substack.com/">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col px-5 py-4">
+          <div class="card h-100" style="background-color:#229ed9">
+            <i class="material-icons">attach_money</i>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bolder fs-3">Personal Blog</h5>
+              <p class="card-text fs-5">
+                I am a money making machine, I make money go cha-ching everytime I do something blablabla I am a money making machine I think you should click on the link to see how I make my money go cha-ching and you can do the same too! However, please do note that nothing here is financial advice, please do your own research before investing. Blablabla
+              </p>
+              <a role="button" class="btn btn-outline-dark" target= "_blank" href="https://moneythrower.wordpress.com/">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div id="contact" class="container-fluid bg-black">
+      <div class="col-12 d-flex justify-content-center p-5">
+        <h1 class="text-center text-white fs-1">Feel free to drop me an email!</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-black">
+      <div class="col-12 d-flex justify-content-center p-4">
+        <a role="button" class="btn btn-primary" id="button_two" href="mailto:justinntew@gmail.com">
+          Click here!
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container-fluid bg-black">
+      <footer>
+        <p>Be <span style="color:#229ed9">Fearless</span></p>
         <p>Check out my other social media platforms!</p>
         <div class="social">
-            <a href="https://twitter.com/krakkenmunch" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/justintewzq/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/justintew" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/krakkenmunch" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/justintewzq/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/justintew" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
         <p class="end">Copyright by Justin Tew 2022</p>
-    </footer>
+      </footer>
+    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          duration: 800
-      });
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous";
+    >
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </body>
 </html>
